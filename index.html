@@ -8,11 +8,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1 class="title">Draped Line Gravity Simulation</h1>
-        <div id="canvas-container"></div>
-        <p class="instructions">移动鼠标与线条互动 | 点击重置模拟</p>
+    <button id="menu-btn">☰</button>
+    <div id="sidebar">
+        <a href="#" data-sketch="sketch.js">Draped Line Gravity</a>
+        <a href="#" data-sketch="sketch_letter.js">Letter Gravity</a>
+        <a href="#" data-sketch="sketch_grass.js">Gone with the Wind</a>
     </div>
-    <script src="sketch.js"></script>
+    <main>
+        <div class="container">
+            <h1 class="title">Gravity Simulation</h1>
+            <div id="canvas-container"></div>
+            <p class="instructions">移动鼠标与线条互动 | 点击重置模拟</p>
+        </div>
+    </main>
+    <script src="sidebar.js"></script>
 </body>
 </html>
