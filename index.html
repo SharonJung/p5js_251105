@@ -4,16 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Draped Line Gravity Simulation</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <button id="menu-btn">☰</button>
+    
     <div id="sidebar">
+        <div class="sidebar-header">
+            <h2>选择效果</h2>
+            <button class="close-btn">×</button>
+        </div>
         <a href="#" data-sketch="sketch.js">Draped Line Gravity</a>
         <a href="#" data-sketch="sketch_letter.js">Letter Gravity</a>
         <a href="#" data-sketch="sketch_grass.js">Gone with the Wind</a>
     </div>
+    
+    <div class="sidebar-overlay"></div>
+    
     <main>
         <div class="container">
             <h1 class="title">Gravity Simulation</h1>
@@ -21,6 +29,11 @@
             <p class="instructions">移动鼠标与线条互动 | 点击重置模拟</p>
         </div>
     </main>
+
+    <!-- 预加载所有 sketch 文件 -->
+    <script src="sketch.js"></script>
+    <script src="sketch_letter.js"></script>
+    <script src="sketch_grass.js"></script>
     <script src="sidebar.js"></script>
 </body>
 </html>
